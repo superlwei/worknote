@@ -1,0 +1,11 @@
+1、whisper测试相关记录
+time：20240414
+内容：Whisper 模型是 Transformers 中的一个模型，它具有自己的特征提取器（WhisperFeatureExtractor）和分词器（WhisperTokenizer）。让我们介绍一下它们的作用：
+
+WhisperFeatureExtractor（特征提取器）：WhisperFeatureExtractor 是用于 Whisper 模型的特征提取器。它的作用是将输入文本转换为模型可以理解的特征表示，通常是数值化的形式，以便模型可以对其进行处理和计算。
+                                特征提取器负责将文本数据转换为模型输入的格式，包括词嵌入、位置编码等特征。
+
+
+WhisperTokenizer（分词器）：WhisperTokenizer 是用于 Whisper 模型的分词器。它的作用是将输入文本分割成词语或子词的序列，这样模型可以逐个处理这些词语或子词，以便进行下游任务的处理。分词器在自然语言处理中非常重要，
+                              因为它决定了模型如何理解和处理文本数据，包括词级别和子词级别的处理。
+总体而言，WhisperFeatureExtractor 负责将文本转换为特征表示，而 WhisperTokenizer 则负责将文本分割为模型可以处理的词语或子词序列。这两个组件是构建 Whisper 模型的关键部分，它们使得模型能够有效地处理自然语言文本数据并进行相应的任务。
